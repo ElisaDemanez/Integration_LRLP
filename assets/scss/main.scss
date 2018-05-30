@@ -1,0 +1,130 @@
+@import 'fonts.scss';
+@import 'base_setup.scss';
+
+
+.header {
+
+    &__logo {
+        max-height: 171px;
+        padding-top: 30px;
+        justify-content: center;
+    }
+
+    nav {
+        background: white;
+        justify-content: space-between;
+        max-height: 17px;
+        padding: 30px 0px;
+        font-weight: 600;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+
+        &.__small-screen {
+            width: 100%;
+            max-width: 720px;
+        }
+
+        &.__desktop {
+            min-width: 940px;
+
+            a {
+                transition: 0.4s;
+
+                &:hover {
+                    color: $darkgrey;
+                }
+
+            }
+
+        }
+
+        a {
+            margin: 0;
+            color: inherit;
+            text-decoration: none;
+            text-decoration-style: none;
+        }
+
+        ul {
+            justify-content: space-between;
+
+            >* {
+                padding: 0 20px;
+            }
+
+        }
+
+    }
+
+}
+
+.navigation_articles {
+    z-index: -1000;
+    height: 0px;
+}
+
+.navigation_articles :first-child {
+    transform: rotate(270deg);
+    padding-bottom: 13vw;
+    padding-right: 3vw;
+}
+
+
+.navigation_articles :last-child {
+    transform: rotate(90deg);
+    padding-bottom: 13vw;
+    padding-left: 3vw;
+}
+
+
+main {
+    justify-content: space-around;
+    background-color: $superlightgrey;
+    border-top: 1px solid #f4f4f4;
+
+    article {
+
+        >img:first-of-type {
+            width: 90vw;
+            height: auto;
+            max-height: 570px;
+            object-fit: cover;
+            object-position: 0 0;
+        }
+
+        .__header {
+
+            background: $superlightgrey;
+            margin-top: -100px;
+            width: 90vw;
+
+            h2 {
+                text-align: center;
+                font-size: 3em;
+                padding: 0 2em;
+            }
+
+            .article_info {
+                color: $lightgrey;
+
+                b {
+                    color: $darkgrey;
+                    font-size: larger;
+                    font-weight: lighter;
+                }
+
+            }
+
+            div {
+              padding-top: 20px;
+
+            }
+
+        }
+
+    }
+
+}
+
+@import 'media_queries.scss';

@@ -1,0 +1,52 @@
+$darkgrey: #4d4d4d;
+$lightgrey: #8f8f8f;
+$superlightgrey: #fafafa;
+
+body {
+    background: white;
+    margin: 0%;
+    >* {
+        padding: 0 2.5%;
+        width: 95%;
+    }
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+div.icons>* {
+    padding: 0 5px;
+}
+
+.small_icon {
+    max-width: 16px;
+    height: 16px;
+}
+
+img {
+    width: auto;
+    height: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.align_center {
+    align-items: center;
+}
+
+.justify_space_between {
+    justify-content: space-between;
+}

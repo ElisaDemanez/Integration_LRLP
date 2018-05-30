@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'gotham_boldregular';
+    src: url('/assets/fonts/Gotham_Bold_Regular/gotham_bold_regular-webfont.woff') format('woff'), 
+    url('/assets/fonts/Gotham_Bold_Regular/gotham_bold_regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.gotham_bold {
+
+    font-family: 'gotham_boldregular';
+    
+}
+
+
+@font-face {
+    font-family: 'Chronicle_display_roman';
+    src: url('/assets/fonts/Chronicle_Display_Roman.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.Chronicle_display_roman {
+
+    font-family: 'Chronicle_display_roman';
+    
+}
+
+

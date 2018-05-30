@@ -1,0 +1,35 @@
+@media (max-width: 1000px) {
+    .__small-screen {
+        display: flex;
+    }
+    .__desktop,
+    .navigation_articles {
+        display: none;
+    }
+}
+
+@media (min-width: 1000px) {
+    .__small-screen,
+        {
+        display: none;
+    }
+    .__desktop {
+        display: flex;
+    }
+    article {
+        .__header {
+            width: 80vw !important;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    nav.__desktop {
+        width: 1140px !important;
+    }
+    article {
+        .__header {
+            width: 80vw !important;
+        }
+    }
+}
